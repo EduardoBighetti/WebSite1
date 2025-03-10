@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eduardo Barbizan Rodrigues Bighetti">
+     <meta name="author" content="João Vitor Nardi">
+    <title>Formulário de Sugestão</title>
+    <link rel="stylesheet" type="text/css" href="styleform.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Sugestão</h1>
+        <form action="#" method="POST" class="sugestion-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone" required>
+
+            <label for="sugestão">Sugestão:</label>
+            <textarea id="suggestion" name="suggestion" placeholder="Escreva sua sugestão aqui" rows="5" required></textarea>
+
+            <label for="categoria">Categoria da Sugestão:</label>
+            <select id="category" name="category">
+                <option value="servico">Serviço</option>
+                <option value="suporte">Suporte</option>
+                <option value="outros">Outros</option>
+            </select>
+
+            <button type="submit">Enviar Sugestão</button>
+        </form>
+        <button type="button" class="btn-voltar" onclick="history.back()">Voltar</button>
+    </div>
+</body>
+</html>
